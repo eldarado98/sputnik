@@ -1,0 +1,289 @@
+@font-face {
+  font-family: 'Avenir Next';
+  font-weight: 100;
+  font-style: normal;
+  src:
+    local('avenirnext_100'),
+    url('avenirnext_100.woff2') format('woff2'),
+    url('avenirnext_100.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  font-weight: 200;
+  font-style: normal;
+  src:
+    local('avenirnext_200'),
+    url('avenirnext_200.woff2') format('woff2'),
+    url('avenirnext_200.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local('avenirnext_400'),
+    url('avenirnext_400.woff2') format('woff2'),
+    url('avenirnext_400.woff') format('woff');
+}
+
+html {
+  height: 100%;
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+body {
+  background-color: #6088cf;
+  background-image: linear-gradient(135deg, #56bab2, #6956ec);
+  background-size: 150% 150%;
+  -webkit-animation: bg 200s ease infinite;
+  animation: bg 200s ease infinite;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100%;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+
+.container {
+  padding: 40px 20px 20px;
+  min-height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1;
+  font-weight: 100;
+  margin: 20px 0 0;
+}
+
+h2 {
+  font-size: inherit;
+  font-weight: 400;
+  line-height: inherit;
+  margin: 0;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.logo {
+  height: 46px;
+  width: 160px;
+  vertical-align: middle;
+  margin: 0 56px 10px 0;
+}
+
+.phone {
+  font-size: 1.125em;
+  white-space: nowrap;
+}
+
+main {
+  max-width: 484px;
+  line-height: 1.625;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9375em;
+}
+
+.modal-trigger {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 20px 20px 0;
+  background: rgba(255, 255, 255, 0);
+  padding: 8px 10px;
+  font-size: 1.125em;
+  text-align: center;
+  min-width: 200px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  -webkit-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  cursor: pointer;
+  outline: 0;
+}
+
+.modal-trigger:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.modal {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  background: rgba(82, 95, 127, 0);
+  pointer-events: none;
+}
+
+.modal-content {
+  max-width: 800px;
+  max-height: 100%;
+  position: relative;
+  background-color: white;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0;
+  overflow-y: auto;
+  -webkit-transition: opacity 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: #32325d;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.modal-content a {
+  text-decoration: underline;
+}
+
+.modal-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.modal-visible {
+  background: rgba(82, 95, 127, 0.4);
+  pointer-events: all;
+}
+
+.modal-visible .modal-content {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: url(close.svg) no-repeat 50% 50%;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 70px 70px 20px;
+  }
+
+  h1 {
+    font-size: 3.625rem;
+    line-height: 0.914;
+  }
+
+  p {
+    margin: 20px 0 30px;
+  }
+
+  .modal-trigger {
+    font-size: 1.25em;
+  }
+
+  .modal {
+    padding: 50px;
+  }
+
+  .modal-content {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+    margin: 30px 0 40px;
+  }
+
+  h1 {
+    font-size: 4.25rem;
+    line-height: 1.074;
+  }
+
+  main {
+    font-size: 1.125em;
+    line-height: 1.84;
+    max-width: 568px;
+  }
+}
+
+@-webkit-keyframes bg {
+  0%,
+  100% {
+    background-position: 0 28%;
+  }
+
+  50% {
+    background-position: 100% 73%;
+  }
+}
+
+@keyframes bg {
+  0%,
+  100% {
+    background-position: 0 28%;
+  }
+
+  50% {
+    background-position: 100% 73%;
+  }
+}
